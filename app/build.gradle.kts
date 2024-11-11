@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.lambao.jetpackcompose.basic"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.lambao.jetpackcompose.basic"
