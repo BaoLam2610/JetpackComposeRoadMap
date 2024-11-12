@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import com.lambao.jetpackcompose.basic.ui.ColumnExampleScreen
 import com.lambao.jetpackcompose.basic.ui.LoginScreen
 import com.lambao.jetpackcompose.basic.ui.RowExampleScreen
+import com.lambao.jetpackcompose.basic.ui.ScreenExample
 import com.lambao.jetpackcompose.basic.ui.theme.JetpackComposeBasicTheme
 
 class MainActivity : ComponentActivity() {
@@ -37,7 +38,8 @@ fun MyApp(modifier: Modifier = Modifier) {
     Scaffold(modifier = modifier) { innerPadding ->
 //        ColumnExampleScreen(modifier = Modifier.background(Color.Black).padding(innerPadding))
 //        RowExampleScreen(modifier = Modifier.background(Color.Black).padding(innerPadding))
-        LoginScreen(modifier = Modifier.padding(innerPadding))
+//        LoginScreen(modifier = Modifier.padding(innerPadding))
+        ScreenExample(modifier = Modifier.padding(innerPadding))
     }
 }
 

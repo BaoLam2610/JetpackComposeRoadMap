@@ -1,5 +1,6 @@
 package com.lambao.jetpackcompose.basic.ui
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.PressInteraction
@@ -66,7 +67,9 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             onValueChange = {
                 text.value = it
             },
-            modifier = Modifier.fillMaxWidth(),
+            modifier = Modifier
+                .background(Color.White)
+                .fillMaxWidth(),
             enabled = true,
             readOnly = false,
             textStyle = MaterialTheme.typography.bodyMedium, // set style of text
@@ -108,9 +111,6 @@ fun LoginScreen(modifier: Modifier = Modifier) {
                 autoCorrect = false,
                 keyboardType = KeyboardType.Text,
                 imeAction = ImeAction.None,
-                platformImeOptions = PlatformImeOptions(
-                    privateImeOptions = "asd",
-                )
             ),
             keyboardActions = KeyboardActions(
                 onDone = { /*TODO*/ },
@@ -148,7 +148,7 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             colors = TextFieldDefaults.colors(
                 focusedTextColor = Color.Blue,
                 unfocusedTextColor = Color.Gray,
-                focusedIndicatorColor = Color.Transparent, // Hide the indicator
+                focusedIndicatorColor = Color.Transparent,
                 unfocusedIndicatorColor = Color.Transparent,
                 disabledTextColor = Color.LightGray,
                 errorCursorColor = Color.Red,
@@ -158,4 +158,14 @@ fun LoginScreen(modifier: Modifier = Modifier) {
             )
         )
     }
+}
+
+@Composable
+fun LoginText(modifier: Modifier = Modifier) {
+    Text(
+        text = "Login",
+        style = MaterialTheme.typography.headlineLarge,
+        color = Color.Black,
+        fontSize = 24.sp
+    )
 }
