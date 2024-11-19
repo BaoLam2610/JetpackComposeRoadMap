@@ -16,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.lambao.jetpackcompose.basic.ui.ColumnExampleScreen
+import com.lambao.jetpackcompose.basic.ui.LazyColumnScreen
 import com.lambao.jetpackcompose.basic.ui.LoginScreen
 import com.lambao.jetpackcompose.basic.ui.RowExampleScreen
 import com.lambao.jetpackcompose.basic.ui.ScreenExample
@@ -39,7 +40,8 @@ fun MyApp(modifier: Modifier = Modifier) {
 //        ColumnExampleScreen(modifier = Modifier.background(Color.Black).padding(innerPadding))
 //        RowExampleScreen(modifier = Modifier.background(Color.Black).padding(innerPadding))
 //        LoginScreen(modifier = Modifier.padding(innerPadding))
-        ScreenExample(modifier = Modifier.padding(innerPadding))
+//        ScreenExample(modifier = Modifier.padding(innerPadding))
+        LazyColumnScreen(modifier = Modifier.padding(innerPadding))
     }
 }
 
