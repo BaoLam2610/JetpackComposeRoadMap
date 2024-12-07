@@ -20,15 +20,13 @@ class MainActivity : ComponentActivity() {
         setContent {
             JetpackComposeBasicTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    CalculatorScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
